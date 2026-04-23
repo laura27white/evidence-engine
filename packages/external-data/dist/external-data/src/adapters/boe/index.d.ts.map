@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../../src/adapters/boe/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,WAAW,EAAE,KAAK,aAAa,EAAE,MAAM,UAAU,CAAC;AACxE,OAAO,EACL,gBAAgB,EAChB,aAAa,EACb,cAAc,EACd,KAAK,oBAAoB,GAC1B,MAAM,oBAAoB,CAAC;AAC5B,OAAO,EAAE,eAAe,EAAE,MAAM,WAAW,CAAC;AAC5C,YAAY,EAAE,SAAS,EAAE,MAAM,WAAW,CAAC"}

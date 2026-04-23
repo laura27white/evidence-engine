@@ -1,0 +1,1 @@
+{"version":3,"file":"fixtures.d.ts","sourceRoot":"","sources":["../../../src/cascade/__tests__/fixtures.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,WAAW,EAAE,MAAM,UAAU,CAAC;AAE5D,wBAAgB,IAAI,CAAC,EAAE,EAAE,MAAM,EAAE,KAAK,SAAI,EAAE,QAAQ,SAAa,GAAG,cAAc,CAQjF;AAED,wBAAgB,IAAI,CAAC,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,GAAG,WAAW,CAOhF"}

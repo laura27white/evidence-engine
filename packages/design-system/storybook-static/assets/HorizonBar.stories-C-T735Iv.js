@@ -1,0 +1,26 @@
+import{j as e}from"./jsx-runtime-8P-18mTY.js";import{r as V}from"./index-Cs7sjTYM.js";import{c as r}from"./colour-BqQ11GRZ.js";import{s as h}from"./space-CWkbJhBg.js";import"./_commonjsHelpers-BosuxZz1.js";function m(s){return Math.min(1,Math.max(0,s))}const f={safe:r.severity.safe,safeSoft:r.severity.safeSoft,warning:r.severity.warning,warningSoft:r.severity.warningSoft,critical:r.severity.critical,criticalSoft:r.severity.criticalSoft},t=V.forwardRef(function({currentPosition:k,projectedBreach:c,severity:d,horizonLabel:_="12 months",description:H,style:D,...W},$){const l=m(k),p=c==null?null:m(c),u=f[d],q=d+"Soft",F=f[q]??r.line.hairline;return e.jsxs("div",{ref:$,style:{position:"relative",width:"100%",...D},...W,children:[e.jsxs("div",{role:"img","aria-label":H,style:{position:"relative",width:"100%",height:"20px",background:F,border:`1px solid ${r.line.hairline}`,borderRadius:h.radius.sm,overflow:"hidden"},children:[e.jsx("div",{style:{position:"absolute",top:0,left:0,height:"100%",width:`${l*100}%`,background:u,transition:"width 250ms ease-out"}}),e.jsx("div",{style:{position:"absolute",top:0,left:`${l*100}%`,height:"100%",width:`${(1-l)*100}%`,background:`repeating-linear-gradient(90deg, ${u}55 0 4px, transparent 4px 8px)`}}),p!==null?e.jsx("div",{"aria-hidden":!0,style:{position:"absolute",top:"-4px",bottom:"-4px",left:`calc(${p*100}% - 1px)`,width:"2px",background:r.ink.primary}}):null]}),e.jsxs("div",{"aria-hidden":!0,style:{display:"flex",justifyContent:"space-between",marginTop:h.scale[1],fontFamily:"var(--font-mono), Consolas, monospace",fontSize:"11px",lineHeight:"14px",color:r.ink.tertiary},children:[e.jsx("span",{children:"Today"}),e.jsx("span",{children:_})]})]})});try{t.displayName="HorizonBar",t.__docgenInfo={description:"",displayName:"HorizonBar",props:{currentPosition:{defaultValue:null,description:"Fraction along the horizon of the current observed position, in [0, 1].",name:"currentPosition",required:!0,type:{name:"number"}},projectedBreach:{defaultValue:null,description:"Fraction at which the forecast predicts breach, or null if no breach projected.",name:"projectedBreach",required:!1,type:{name:"number | null"}},severity:{defaultValue:null,description:"Severity of the current drift state. Controls the fill colour.",name:"severity",required:!0,type:{name:"enum",value:[{value:'"safe"'},{value:'"warning"'},{value:'"critical"'}]}},horizonLabel:{defaultValue:{value:"12 months"},description:'Total horizon duration label, displayed at the far right. Example: "12 months".',name:"horizonLabel",required:!1,type:{name:"string"}},description:{defaultValue:null,description:"Accessible description. Always rendered in an off-screen span.",name:"description",required:!0,type:{name:"string"}}}}}catch{}const I={title:"Components/HorizonBar",component:t,tags:["autodocs"],args:{currentPosition:.35,projectedBreach:.72,severity:"warning",horizonLabel:"12 months",description:"CPI drift is 35 percent through its 12-month horizon; projected breach at month 9."}},i={},o={args:{severity:"safe",currentPosition:.08,projectedBreach:null,description:"Drift within safe band, no breach projected."}},n={args:{severity:"critical",currentPosition:.82,projectedBreach:.9,description:"Drift near tolerance boundary; breach within weeks."}},a={render:()=>e.jsxs("div",{style:{display:"flex",flexDirection:"column",gap:20,maxWidth:640},children:[e.jsx(t,{severity:"safe",currentPosition:.08,description:"Safe"}),e.jsx(t,{severity:"warning",currentPosition:.4,projectedBreach:.75,description:"Warning, breach projected."}),e.jsx(t,{severity:"critical",currentPosition:.85,projectedBreach:.95,description:"Critical, imminent breach."})]})};var y,g,v;i.parameters={...i.parameters,docs:{...(y=i.parameters)==null?void 0:y.docs,source:{originalSource:"{}",...(v=(g=i.parameters)==null?void 0:g.docs)==null?void 0:v.source}}};var x,b,j;o.parameters={...o.parameters,docs:{...(x=o.parameters)==null?void 0:x.docs,source:{originalSource:`{
+  args: {
+    severity: 'safe',
+    currentPosition: 0.08,
+    projectedBreach: null,
+    description: 'Drift within safe band, no breach projected.'
+  }
+}`,...(j=(b=o.parameters)==null?void 0:b.docs)==null?void 0:j.source}}};var w,S,B;n.parameters={...n.parameters,docs:{...(w=n.parameters)==null?void 0:w.docs,source:{originalSource:`{
+  args: {
+    severity: 'critical',
+    currentPosition: 0.82,
+    projectedBreach: 0.9,
+    description: 'Drift near tolerance boundary; breach within weeks.'
+  }
+}`,...(B=(S=n.parameters)==null?void 0:S.docs)==null?void 0:B.source}}};var z,P,C;a.parameters={...a.parameters,docs:{...(z=a.parameters)==null?void 0:z.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 20,
+    maxWidth: 640
+  }}>\r
+      <HorizonBar severity="safe" currentPosition={0.08} description="Safe" />\r
+      <HorizonBar severity="warning" currentPosition={0.4} projectedBreach={0.75} description="Warning, breach projected." />\r
+      <HorizonBar severity="critical" currentPosition={0.85} projectedBreach={0.95} description="Critical, imminent breach." />\r
+    </div>
+}`,...(C=(P=a.parameters)==null?void 0:P.docs)==null?void 0:C.source}}};const M=["Warning","Safe","Critical","Stack"];export{n as Critical,o as Safe,a as Stack,i as Warning,M as __namedExportsOrder,I as default};

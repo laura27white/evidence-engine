@@ -1,0 +1,24 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Foundations/Motion/Principles" />
+
+# Motion
+
+Restrained. Editorial. Never decorative. Motion earns its place by making a change legible or by reducing layout jolt, not by decorating.
+
+## Primitives
+
+- **`StaggerFade`** - a staggered opacity fade used to bring a list of cards into view. 80ms delay per item, 180ms per-item duration. Under `prefers-reduced-motion`, children render at opacity 1 with zero delay.
+- **`ChartTransition`** - a 250ms ease-out crossfade used when a chart swaps between states (filter changed, series changed). Takes a `transitionKey`; changing it drives the crossfade.
+- **`PageTransition`** - a 200ms ease-out opacity crossfade applied on route changes so pages do not hard-swap.
+
+## Rules
+
+- **Duration.** Nothing longer than 300ms for UI transitions. Anything longer is a loading state, not a transition.
+- **Easing.** `easeOut` by default. No bouncy springs; no anticipation.
+- **Opacity, not movement.** Prefer opacity transitions to y-axis slides. Slides are jarring on long documents.
+- **Reduced motion.** All three primitives honour the `(prefers-reduced-motion: reduce)` media query via the `useReducedMotion()` hook.
+
+## Example patterns
+
+The Horizon view animates assumption cards in with `StaggerFade` on initial load, then relies on `ChartTransition` for filter changes. Route changes between Horizon, Cascade, Trace, and Brief use `PageTransition` so the change is perceptible without being theatrical.

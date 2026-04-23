@@ -1,0 +1,34 @@
+/**
+ * Typography tokens.
+ *
+ * Pair a serif display face with a sans body and a mono for data. ARCHITECTURE.md section
+ * 6.2 picks the free fallback stack (Source Serif 4, IBM Plex Sans, JetBrains Mono); CSS
+ * variables are populated by next/font in apps/web/app/layout.tsx.
+ */
+export const typography = {
+    font: {
+        display: 'var(--font-display), "Source Serif 4", Georgia, serif',
+        body: 'var(--font-body), "IBM Plex Sans", system-ui, sans-serif',
+        mono: 'var(--font-mono), "JetBrains Mono", Consolas, Menlo, monospace',
+    },
+    scale: {
+        displayMax: { size: '72px', lineHeight: '76px', tracking: '-0.02em', weight: 500 },
+        displayLarge: { size: '56px', lineHeight: '60px', tracking: '-0.02em', weight: 500 },
+        displayMedium: { size: '40px', lineHeight: '44px', tracking: '-0.015em', weight: 500 },
+        displaySmall: { size: '28px', lineHeight: '32px', tracking: '-0.01em', weight: 500 },
+        bodyLarge: { size: '17px', lineHeight: '26px', tracking: '0', weight: 400 },
+        body: { size: '15px', lineHeight: '22px', tracking: '0', weight: 400 },
+        bodySmall: { size: '13px', lineHeight: '18px', tracking: '0.005em', weight: 400 },
+        label: {
+            size: '12px',
+            lineHeight: '16px',
+            tracking: '0.08em',
+            weight: 500,
+            textTransform: 'uppercase',
+        },
+        monoLarge: { size: '15px', lineHeight: '20px', tracking: '0', weight: 400 },
+        mono: { size: '13px', lineHeight: '18px', tracking: '0', weight: 400 },
+        monoSmall: { size: '11px', lineHeight: '14px', tracking: '0', weight: 400 },
+    },
+};
+//# sourceMappingURL=typography.js.map

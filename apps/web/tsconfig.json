@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@tp/design-system": ["../../packages/design-system/src/index.ts"],
+      "@tp/design-system/*": ["../../packages/design-system/src/*"],
+      "@tp/design-system/tokens": ["../../packages/design-system/tokens/index.ts"],
+      "@tp/design-system/tokens/*": ["../../packages/design-system/tokens/*"],
+      "@tp/intelligence": ["../../packages/intelligence/src/index.ts"],
+      "@tp/intelligence/*": ["../../packages/intelligence/src/*"],
+      "@tp/external-data": ["../../packages/external-data/src/index.ts"],
+      "@tp/external-data/*": ["../../packages/external-data/src/*"],
+      "@tp/db": ["../../packages/db/src/index.ts"],
+      "@tp/db/*": ["../../packages/db/src/*"]
+    },
+    "types": ["node"],
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next", "out", "e2e", "playwright.config.ts"]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../../src/forecast/types.ts"],"names":[],"mappings":"AAAA,2CAA2C;AA6D3C,MAAM,CAAC,MAAM,uBAAuB,GAEhC;IACF,WAAW,EAAE,GAAG;IAChB,uBAAuB,EAAE,CAAC;CAC3B,CAAC;AAEF,MAAM,OAAO,kBAAmB,SAAQ,KAAK;IAC3C,YAAY,OAAe;QACzB,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,IAAI,GAAG,oBAAoB,CAAC;IACnC,CAAC;CACF"}

@@ -1,0 +1,1 @@
+import{t as n}from"./typography-BMmGoFaS.js";function s(i){const t=n.scale[i],e={fontSize:t.size,lineHeight:t.lineHeight,letterSpacing:t.tracking,fontWeight:t.weight};return"textTransform"in t&&(e.textTransform=t.textTransform),e}const r=n.font;export{r as f,s};

@@ -1,0 +1,32 @@
+{
+  "name": "@tp/external-data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Adapters for ONS, Bank of England, and gov.uk public datasets. Normalises upstream data to the ExternalSignal schema.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:integration": "CI_ALLOW_NETWORK=1 vitest run --config vitest.integration.config.ts",
+    "build": "tsc",
+    "ingest:backfill": "tsx scripts/backfill.ts"
+  },
+  "dependencies": {
+    "@tp/db": "workspace:*",
+    "bottleneck": "2.19.5",
+    "csv-parse": "5.5.6",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "msw": "2.4.11",
+    "tsx": "4.19.1"
+  }
+}

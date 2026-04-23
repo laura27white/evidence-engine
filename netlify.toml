@@ -1,0 +1,23 @@
+# Netlify resolves `publish` relative to `base`, so when base is `apps/web` the
+# publish path must be `.next`, not `apps/web/.next` (which would double the path
+# into `apps/web/apps/web/.next`).
+[build]
+  base = "apps/web"
+  command = "pnpm -w install --frozen-lockfile && pnpm -w --filter @tp/web build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "10.28.0"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"

@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Foundations/Overview" />
+
+# Design foundations
+
+The Evidence Engine design system codifies the editorial-intelligence direction committed to in `ARCHITECTURE.md` section 6. It is deliberately sparse where other AI dashboards are busy, and typographically confident where others default to system fonts.
+
+## Principles
+
+1. **Editorial, not dashboard.** Generous negative space. Serif display type sized large. One accent colour. Nothing ornamental.
+2. **Readable before pretty.** Every colour and every contrast ratio is verified; severity is never conveyed by colour alone.
+3. **Restrained motion.** No bouncy springs. No confetti. Animations are short, easeOut, and collapse to nothing under `prefers-reduced-motion`.
+4. **Semantic before cosmetic.** Components render semantic HTML. ARIA is used only where HTML alone is insufficient. Everything is keyboard navigable.
+5. **Tokens over constants.** Every colour, type size, and spacing step comes from a token file. Arbitrary values are banned by Stylelint.
+
+## What's here
+
+- **Tokens/Colour** - paper, ink, accent, severity, line.
+- **Tokens/Typography** - display serif, body sans, mono for data.
+- **Tokens/Space** - 4px base grid plus container and radius scales.
+- **Motion** - `StaggerFade`, `ChartTransition`, `PageTransition`.
+- **Iconography** - wrapped Lucide plus two domain icons (`DriftArrowIcon`, `CascadeNodeIcon`).
+- **Brand** - `Wordmark` and `Monogram` as SVG React components.
+- **Components** - sixteen primitives covering data display, layout, and state.

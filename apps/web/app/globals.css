@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    background-color: theme('colors.cream');
+    color: theme('colors.ink.DEFAULT');
+    font-family: theme('fontFamily.body');
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: theme('fontFamily.display');
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.teal');
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: theme('colors.ink.DEFAULT');
+    color: theme('colors.cream');
+    padding: 0.75rem 1.25rem;
+    font-family: theme('fontFamily.body');
+    font-weight: 600;
+    z-index: 100;
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+}

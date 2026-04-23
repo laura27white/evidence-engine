@@ -1,0 +1,26 @@
+/**
+ * Storybook preview styles.
+ *
+ * Loads Google Fonts directly (Storybook runs outside Next.js so we do not have
+ * next/font here) and assigns them to the CSS variables consumed by the design tokens.
+ * This makes Storybook render with the same type stack as the Next.js app.
+ */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700&display=swap');
+
+:root {
+  --font-display: 'Source Serif 4';
+  --font-body: 'IBM Plex Sans';
+  --font-mono: 'JetBrains Mono';
+}
+
+html,
+body,
+#storybook-root {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background: #f7f4ee;
+  color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
