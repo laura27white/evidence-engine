@@ -24,7 +24,7 @@ Three minutes. Three views. One moment.
 2. **Trace for A039 Inflation (90 seconds)**: the hero. Real ONS data, forecast cone, live timestamp. **This is the moment.**
 3. **Cascade for A039 (45 seconds)**: when it breaches, twelve downstream assumptions wobble.
 
-Ant operates the screen. You deliver the lines.
+
 
 ---
 
@@ -46,13 +46,12 @@ Pause. Let that land. Most judges have seen a "drift dashboard" before. They hav
 
 ### Horizon view (30 seconds)
 
-(Ant opens `/horizon`.)
 
 > "This is the programme's full assumption register, 47 entries, plotted by lead time. Each bar is an assumption. The red bars are breaching now or within thirty days. Amber is ninety days. Green is beyond a year.
 >
 > You can see at a glance: most of this programme is green, but there are three reds and five ambers. The one I want to show you is right here."
 
-(Ant clicks A039 Inflation.)
+
 
 ### Trace view: the hero (90 seconds)
 
@@ -78,7 +77,7 @@ This is the line the rehearsal is about. Say it slowly. Don't rush off it.
 
 ### Cascade view (45 seconds)
 
-(Ant clicks through to the Cascade view filtered to A039.)
+
 
 > "One drifting assumption on its own isn't the story. Cascading impact is the story. When A039 breaches, twelve other assumptions are affected, because they're linked in the programme's dependency graph.
 >
@@ -115,9 +114,9 @@ Practised target: **3 minutes exactly**.
 
 ---
 
-## 5. Choreography with Ant
+## 5. Choreography
 
-Ant is at the laptop. You are at the front, presenting. Agree on these signals:
+You are at the front, presenting. Agree on these signals:
 
 - **"And the one I want to show you is right here"** → Ant clicks A039. Plan A: the link is in the Horizon table; second row. Plan B: Ant already has A039's Trace view pre-loaded in tab 2.
 - **"Every one of these points is live, pulled from ONS this morning"** → Ant hovers a data point on the chart; tooltip shows the source URL.
@@ -188,11 +187,11 @@ Judges ask roughly the same questions. Have a crisp answer ready.
 
 ---
 
-## 7. Questions you might want to deflect to Ant
+## 7. Questions you might want to deflect and think.
 
 For the deepest technical questions, it's completely fine to say:
 
-> "Good question, Ant can take you through the maths on that one."
+> "Good question, I'll come back to you on that one."
 
 Specifically for:
 
@@ -266,9 +265,8 @@ The morning of:
 Just before you go on:
 
 - [ ] Laptop plugged in, screen mirrored, incognito window open with three tabs
-- [ ] Ant has the Recompute button ready
 - [ ] Breathe
 
 ---
 
-*You've got this. Ant has built you a product that does what it says. Your job is to tell them the story of it. Three minutes. One moment. Go.*
+*You've got this. Your job is to tell them the story of it. Three minutes. One moment. Go.*
