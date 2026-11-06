@@ -3,7 +3,7 @@
 # into `apps/web/apps/web/.next`).
 [build]
   base = "apps/web"
-  command = "pnpm -w install --frozen-lockfile && pnpm -w --filter @tp/web build"
+  command = "pnpm install --frozen-lockfile && pnpm -w --filter @tp/web build"
   publish = ".next"
 
 [build.environment]
